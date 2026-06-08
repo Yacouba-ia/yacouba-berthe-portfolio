@@ -1,6 +1,16 @@
-# Yacouba Berthe - AI / GenAI Backend Developer Portfolio
+# Yacouba Berthe Portfolio
 
-Landing page portfolio premium, responsive et prête pour Vercel. Le site présente le profil de Yacouba Berthe comme AI / GenAI Backend Developer, avec un focus sur FastAPI, LangGraph, LangChain, RAG, PostgreSQL, Docker, agents IA et automatisations.
+Landing page portfolio premium pour Yacouba Berthe, AI / GenAI Backend Developer basé à Bamako, Mali.
+
+Le site présente un profil orienté backends IA, APIs intelligentes, systèmes RAG, workflows multi-agents, automatisations IA et solutions GenAI utiles pour les entreprises.
+
+## Stack
+
+- Next.js avec App Router
+- TypeScript
+- Tailwind CSS
+- SEO metadata et Open Graph
+- Déploiement Vercel
 
 ## Installation
 
@@ -22,7 +32,7 @@ Ouvrir ensuite `http://localhost:3000`.
 npm run build
 ```
 
-Sur Windows, `scripts/next.mjs` force automatiquement le fallback SWC WebAssembly avec Webpack si le binaire natif Next.js ne se charge pas. Sur Vercel/Linux, le comportement Next.js standard est conservé.
+Le script `scripts/next.mjs` garde un fallback compatible Windows pour Next/SWC. Sur Vercel/Linux, le comportement Next.js standard reste conservé.
 
 ## Déploiement sur Vercel
 
@@ -35,20 +45,31 @@ vercel --prod
 
 Sinon :
 
-1. Connecter GitHub a Vercel.
-2. Importer le repository dans Vercel.
+1. Connecter GitHub à Vercel.
+2. Importer le repository `Yacouba-ia/yacouba-berthe-portfolio`.
 3. Choisir le preset Next.js.
-4. Lancer le déploiement.
+4. Laisser Vercel détecter `npm run build`.
+5. Lancer le déploiement.
 
-## Éléments à remplacer
+## GitHub
 
-- Photo professionnelle : placer le fichier dans `public/images/yacouba-berthe-profile.jpg`.
-- CV PDF : placer le fichier dans `public/CV_Yacouba_Berthe_AI_GenAI_Backend_Developer.pdf`. Tant que ce fichier n'est pas ajouté, le lien de téléchargement est seulement un placeholder.
-- Lien GitHub profil : modifier `profile.links.github` dans `src/data/profile.ts`.
-- Lien LinkedIn : modifier `profile.links.linkedin` dans `src/data/profile.ts`.
-- Liens GitHub projets : modifier `githubHref` dans `src/data/profile.ts`.
-- Liens Details projets : modifier `detailsHref` dans `src/data/profile.ts`.
-- Domaine personnalisé : mettre à jour la configuration Vercel et les métadonnées si un domaine officiel est disponible.
+Repository prévu :
+
+```bash
+git remote add origin https://github.com/Yacouba-ia/yacouba-berthe-portfolio.git
+git branch -M main
+git push -u origin main
+```
+
+## Éléments à remplacer plus tard
+
+- CV : `public/CV_Yacouba_Berthe_AI_GenAI_Backend_Developer.pdf`
+- Photo : `public/images/yacouba-berthe-profile.jpg`
+- Profil GitHub : `profile.links.github` dans `src/data/profile.ts`
+- Profil LinkedIn : `profile.links.linkedin` dans `src/data/profile.ts`
+- Liens GitHub projets : `githubHref` dans `src/data/profile.ts`
+- Liens détails projets : `detailsHref` dans `src/data/profile.ts`
+- Domaine personnalisé : `metadataBase` dans `src/app/layout.tsx`
 
 ## Structure
 
@@ -75,7 +96,7 @@ src/
     profile.ts
 public/
   favicon.svg
+  CV_Yacouba_Berthe_AI_GenAI_Backend_Developer.pdf
   images/
     yacouba-berthe-profile.jpg
-  CV_Yacouba_Berthe_AI_GenAI_Backend_Developer.pdf
 ```

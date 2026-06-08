@@ -17,7 +17,7 @@ export function About() {
         <SectionHeader
           eyebrow="Profil"
           title="Un backend developer orienté produits IA utiles et exploitables."
-          description="Je conçois des fondations techniques claires pour transformer les idees IA en APIs, workflows et assistants fiables."
+          description="Je conçois des fondations techniques claires pour transformer les idées IA en APIs, workflows et assistants fiables."
         />
 
         <div className="grid gap-8 lg:grid-cols-[1.08fr_0.92fr]">

@@ -8,7 +8,7 @@ export function TechStack() {
         <SectionHeader
           eyebrow="Tech stack"
           title="Une stack backend IA pensée pour produire, tester et déployer."
-          description="Technologies utilisees dans les projets de portfolio : APIs, RAG, agents, automatisation et livraison cloud."
+          description="Technologies utilisées dans les projets de portfolio : APIs, RAG, agents, automatisation et livraison cloud."
         />
 
         <div className="grid gap-5 md:grid-cols-2">

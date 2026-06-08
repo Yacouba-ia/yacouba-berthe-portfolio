@@ -14,12 +14,12 @@ const contactItems = [
   },
   {
     label: "LinkedIn",
-    value: "Placeholder",
+    value: "yacouba-berthe-80a335321",
     href: profile.links.linkedin,
   },
   {
     label: "GitHub",
-    value: "Placeholder",
+    value: "Yacouba-ia",
     href: profile.links.github,
   },
 ] as const;
@@ -58,6 +58,8 @@ export function Contact() {
                 <a
                   key={item.label}
                   href={item.href}
+                  target={item.href.startsWith("http") ? "_blank" : undefined}
+                  rel={item.href.startsWith("http") ? "noreferrer" : undefined}
                   className="rounded-lg border border-white/10 bg-white/[0.04] p-5 transition hover:border-cyan-300/30 hover:bg-cyan-300/[0.06]"
                 >
                   <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">

@@ -8,7 +8,7 @@ export function Projects() {
         <SectionHeader
           eyebrow="Portfolio"
           title="Trois projets backend IA pour montrer l'architecture, pas seulement l'interface."
-          description="Chaque projet est presente comme une realisation de portfolio, avec un focus sur les APIs, la persistance, l'orchestration et la qualite backend."
+          description="Chaque projet est présenté comme une réalisation de portfolio, avec un focus sur les APIs, la persistance, l'orchestration et la qualité backend."
         />
 
         <div className="grid gap-5 lg:grid-cols-3">
@@ -41,15 +41,19 @@ export function Projects() {
               <div className="mt-7 flex gap-3">
                 <a
                   href={project.githubHref}
+                  target="_blank"
+                  rel="noreferrer"
                   className="flex-1 rounded-md border border-cyan-300/30 px-4 py-2.5 text-center text-sm font-bold text-cyan-100 transition hover:border-cyan-200 hover:bg-cyan-300/10"
                 >
                   GitHub
                 </a>
                 <a
                   href={project.detailsHref}
+                  target="_blank"
+                  rel="noreferrer"
                   className="flex-1 rounded-md bg-cyan-300 px-4 py-2.5 text-center text-sm font-bold text-slate-950 transition hover:bg-cyan-200"
                 >
-                  Details
+                  Détails
                 </a>
               </div>
             </article>

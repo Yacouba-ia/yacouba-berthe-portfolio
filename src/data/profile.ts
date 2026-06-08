@@ -12,8 +12,8 @@ export const profile = {
   availability:
     "Disponible pour opportunités remote, freelance, contrat, stage technique ou poste junior en Backend IA / GenAI.",
   links: {
-    github: "#",
-    linkedin: "#",
+    github: "https://github.com/Yacouba-ia",
+    linkedin: "https://www.linkedin.com/in/yacouba-berthe-80a335321",
   },
 } as const;
 
@@ -67,7 +67,7 @@ export const projects = [
   {
     name: "AI Operations & Research Backend",
     description:
-      "Backend GenAI multi-agent qui transforme une demande utilisateur en workflow IA structuré : routage intelligent, recherche web, analyse stratégique, génération de rapport business, streaming, JWT et sauvegarde des conversations.",
+      "Backend GenAI multi-agent avec FastAPI, LangGraph, LangChain, OpenAI, Tavily Search, PostgreSQL, JWT, Docker, tests, CI et LangSmith.",
     stack: [
       "FastAPI",
       "LangGraph",
@@ -83,13 +83,13 @@ export const projects = [
       "GitHub Actions",
       "LangSmith",
     ],
-    githubHref: "#",
-    detailsHref: "#",
+    githubHref: "https://github.com/Yacouba-ia/ai-research-strategy-backend",
+    detailsHref: "https://github.com/Yacouba-ia/ai-research-strategy-backend#readme",
   },
   {
     name: "FastAPI RAG Assistant",
     description:
-      "API backend RAG permettant l'inscription, la connexion, l'upload de PDF, le stockage de chunks en PostgreSQL, les questions sur documents et l'historique des conversations.",
+      "API RAG avec upload PDF, Hugging Face, PostgreSQL, JWT, Docker, Alembic, LangSmith, rate limiting, tests et Railway.",
     stack: [
       "FastAPI",
       "RAG",
@@ -102,13 +102,13 @@ export const projects = [
       "Pytest",
       "Railway",
     ],
-    githubHref: "#",
-    detailsHref: "#",
+    githubHref: "https://github.com/Yacouba-ia/Agent-RAG",
+    detailsHref: "https://github.com/Yacouba-ia/Agent-RAG#readme",
   },
   {
     name: "Multimodal AI Agent Backend",
     description:
-      "API backend multimodale pour assistant IA capable de traiter texte, audio, image, PDF, Word et Excel avec orchestration LangGraph et monitoring LangSmith.",
+      "API backend multimodale capable de traiter texte, audio, image, PDF, Word et Excel avec FastAPI, LangGraph, LangChain, OpenAI, Tavily, PostgreSQL, Docker et LangSmith.",
     stack: [
       "FastAPI",
       "LangGraph",
@@ -119,8 +119,8 @@ export const projects = [
       "Docker",
       "LangSmith",
     ],
-    githubHref: "#",
-    detailsHref: "#",
+    githubHref: "https://github.com/Yacouba-ia/multimodal-ai-agent-backend",
+    detailsHref: "https://github.com/Yacouba-ia/multimodal-ai-agent-backend#readme",
   },
 ] as const;
 

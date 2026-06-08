@@ -7,8 +7,8 @@ export function Services() {
       <div className="section-shell">
         <SectionHeader
           eyebrow="Services"
-          title="Des services centres sur les backends IA modernes."
-          description="Une approche concrete : architecture API, orchestration d'agents, recherche documentaire et automatisations business."
+          title="Des services centrés sur les backends IA modernes."
+          description="Une approche concrète : architecture API, orchestration d'agents, recherche documentaire et automatisations business."
         />
 
         <div className="grid gap-4 md:grid-cols-2">
