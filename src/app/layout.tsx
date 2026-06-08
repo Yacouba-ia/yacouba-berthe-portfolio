@@ -2,8 +2,11 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import "./globals.css";
 
+const siteUrl = "https://yacouba-berthe-portfolio.vercel.app";
+const profileImageUrl = `${siteUrl}/images/yacouba-berthe-profile.jpg`;
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://yacouba-berthe-portfolio.vercel.app"),
+  metadataBase: new URL(siteUrl),
   title: "Yacouba Berthe | AI / GenAI Backend Developer",
   description:
     "Portfolio de Yacouba Berthe, développeur Backend IA / GenAI spécialisé en FastAPI, LangGraph, LangChain, RAG, PostgreSQL, Docker et automatisations IA.",
@@ -23,19 +26,19 @@ export const metadata: Metadata = {
   authors: [{ name: "Yacouba Berthe" }],
   creator: "Yacouba Berthe",
   alternates: {
-    canonical: "/",
+    canonical: siteUrl,
   },
   openGraph: {
     title: "Yacouba Berthe | AI / GenAI Backend Developer",
     description:
       "Backends IA, APIs intelligentes, systèmes RAG, workflows multi-agents et automatisations GenAI.",
-    url: "/",
+    url: siteUrl,
     type: "website",
     locale: "fr_FR",
     siteName: "Yacouba Berthe Portfolio",
     images: [
       {
-        url: "/images/yacouba-berthe-profile.jpg",
+        url: profileImageUrl,
         width: 720,
         height: 960,
         alt: "Portrait professionnel de Yacouba Berthe",
@@ -47,7 +50,7 @@ export const metadata: Metadata = {
     title: "Yacouba Berthe | AI / GenAI Backend Developer",
     description:
       "Développeur Backend IA / GenAI spécialisé en FastAPI, LangGraph, LangChain, RAG et PostgreSQL.",
-    images: ["/images/yacouba-berthe-profile.jpg"],
+    images: [profileImageUrl],
   },
   icons: {
     icon: "/favicon.svg",
