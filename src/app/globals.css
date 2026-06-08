@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+:root {
+  --background: #020814;
+  --surface: #071527;
+  --surface-soft: #0a1b31;
+  --foreground: #f8fbff;
+  --muted: #9fb1c8;
+  --cyan: #28d7ff;
+  --blue: #3b82f6;
+  --green: #72f0b4;
+  --violet: #a78bfa;
+  --border: rgba(125, 211, 252, 0.18);
+}
+
+@theme inline {
+  --font-sans: "Geist", "Inter", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono", "SFMono-Regular", Consolas, ui-monospace, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--background);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, rgba(40, 215, 255, 0.14), transparent 30rem),
+    radial-gradient(circle at 85% 10%, rgba(167, 139, 250, 0.1), transparent 26rem),
+    linear-gradient(180deg, #020814 0%, #03101f 46%, #020814 100%);
+  color: var(--foreground);
+  font-family: "Geist", "Inter", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(40, 215, 255, 0.28);
+  color: white;
+}
+
+.section-shell {
+  width: min(100% - 2rem, 72rem);
+  margin-inline: auto;
+}
+
+.premium-card {
+  border: 1px solid var(--border);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.025)),
+    rgba(7, 21, 39, 0.82);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(18px);
+}
+
+.tech-grid {
+  background-image:
+    linear-gradient(rgba(40, 215, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(40, 215, 255, 0.08) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: linear-gradient(to bottom, black, transparent 78%);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slow-pulse {
+  0%,
+  100% {
+    opacity: 0.58;
+  }
+
+  50% {
+    opacity: 0.95;
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.75s ease both;
+}
+
+.animate-slow-pulse {
+  animation: slow-pulse 5s ease-in-out infinite;
+}
+
+.animation-delay-100 {
+  animation-delay: 100ms;
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-300 {
+  animation-delay: 300ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
