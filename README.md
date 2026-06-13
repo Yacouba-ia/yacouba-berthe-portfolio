@@ -1,16 +1,50 @@
 # Yacouba Berthe Portfolio
 
-Landing page portfolio premium pour Yacouba Berthe, AI / GenAI Backend Developer basé à Bamako, Mali.
+Portfolio personnel de Yacouba Berthe, développeur Backend IA / GenAI basé à Bamako, Mali.
 
-Le site présente un profil orienté backends IA, APIs intelligentes, systèmes RAG, workflows multi-agents, automatisations IA et solutions GenAI utiles pour les entreprises.
+Le site présente un profil orienté systèmes backend IA, applications RAG, agents IA, workflows LangGraph, automatisations n8n, intégrations API et backends FastAPI prêts au déploiement.
+
+## Points clés
+
+- Hero premium avec positionnement AI / GenAI Backend Developer
+- Section services pour APIs IA, RAG, agents et automatisation
+- Projets backend IA avec liens GitHub
+- Section dédiée `AI Automation & n8n Workflows`
+- Galerie de 6 workflows n8n avec captures réelles
+- Stack technique backend, GenAI, DevOps et automation
+- SEO metadata et Open Graph
+- Design responsive dark navy avec accents cyan
+
+## Workflows n8n
+
+Les captures workflow utilisées par le site sont dans :
+
+```text
+public/images/workflows/rag-pinecone-workflow.png
+public/images/workflows/telegram-assistant-workflow.png
+public/images/workflows/elevenlabs-voice-agent-workflow.png
+public/images/workflows/crm-leads-workflow.png
+public/images/workflows/multi-agent-team-workflow.png
+public/images/workflows/ai-content-workflow.png
+```
+
+Les projets affichés couvrent :
+
+- Agent RAG n8n + Pinecone
+- Assistant personnel multi-outils sur Telegram
+- Agent vocal IA ElevenLabs pour support et ventes
+- Automatisation des nouveaux leads CRM et emails
+- Équipe multi-agents IA avec superviseur
+- Automatisation de création de contenu IA
 
 ## Stack
 
-- Next.js avec App Router
+- Next.js App Router
 - TypeScript
 - Tailwind CSS
-- SEO metadata et Open Graph
-- Déploiement Vercel
+- React
+- `next/image` pour les images optimisées
+- ESLint
 
 ## Installation
 
@@ -18,60 +52,36 @@ Le site présente un profil orienté backends IA, APIs intelligentes, systèmes 
 npm install
 ```
 
-## Lancer en local
+## Développement local
 
 ```bash
 npm run dev
 ```
 
-Ouvrir ensuite `http://localhost:3000`.
+Ouvrir ensuite :
 
-## Build production
+```text
+http://localhost:3000
+```
+
+## Vérifications
 
 ```bash
+npm run lint
 npm run build
 ```
 
-Le script `scripts/next.mjs` garde un fallback compatible Windows pour Next/SWC. Sur Vercel/Linux, le comportement Next.js standard reste conservé.
+## Déploiement
 
-## Déploiement sur Vercel
+Le projet est prêt pour Vercel. Après connexion du dépôt GitHub à Vercel, le build standard `npm run build` suffit.
 
-Si Vercel CLI est installé et connecté :
+Repository :
 
-```bash
-vercel
-vercel --prod
+```text
+https://github.com/Yacouba-ia/yacouba-berthe-portfolio
 ```
 
-Sinon :
-
-1. Connecter GitHub à Vercel.
-2. Importer le repository `Yacouba-ia/yacouba-berthe-portfolio`.
-3. Choisir le preset Next.js.
-4. Laisser Vercel détecter `npm run build`.
-5. Lancer le déploiement.
-
-## GitHub
-
-Repository prévu :
-
-```bash
-git remote add origin https://github.com/Yacouba-ia/yacouba-berthe-portfolio.git
-git branch -M main
-git push -u origin main
-```
-
-## Éléments à remplacer plus tard
-
-- CV : `public/CV_Yacouba_Berthe_AI_GenAI_Backend_Developer.pdf`
-- Photo : `public/images/yacouba-berthe-profile.jpg`
-- Profil GitHub : `profile.links.github` dans `src/data/profile.ts`
-- Profil LinkedIn : `profile.links.linkedin` dans `src/data/profile.ts`
-- Liens GitHub projets : `githubHref` dans `src/data/profile.ts`
-- Liens détails projets : `detailsHref` dans `src/data/profile.ts`
-- Domaine personnalisé : `metadataBase` dans `src/app/layout.tsx`
-
-## Structure
+## Structure principale
 
 ```text
 src/
@@ -80,6 +90,7 @@ src/
     layout.tsx
     page.tsx
   components/
+    AutomationWorkflows.tsx
     About.tsx
     Certifications.tsx
     Contact.tsx
@@ -95,8 +106,8 @@ src/
   data/
     profile.ts
 public/
-  favicon.svg
-  CV_Yacouba_Berthe_AI_GenAI_Backend_Developer.pdf
   images/
+    workflows/
     yacouba-berthe-profile.jpg
+  CV_Yacouba_Berthe_AI_GenAI_Backend_Developer.pdf
 ```

@@ -6,6 +6,7 @@ const focusAreas = [
   "Streaming de réponse",
   "Authentification JWT",
   "Persistance PostgreSQL",
+  "Automatisation n8n",
   "Monitoring LangSmith",
   "Workflows LangGraph",
 ] as const;

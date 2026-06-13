@@ -7,9 +7,9 @@ const profileImageUrl = `${siteUrl}/images/yacouba-berthe-profile.jpg`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Yacouba Berthe | AI / GenAI Backend Developer",
+  title: "Yacouba Berthe | AI / GenAI Backend Developer & AI Automation Specialist",
   description:
-    "Portfolio de Yacouba Berthe, développeur Backend IA / GenAI spécialisé en FastAPI, LangGraph, LangChain, RAG, PostgreSQL, Docker et automatisations IA.",
+    "Portfolio de Yacouba Berthe, développeur Backend IA / GenAI basé à Bamako, spécialisé en FastAPI, LangGraph, RAG, agents IA, n8n, API integrations et automatisations business.",
   keywords: [
     "Yacouba Berthe",
     "AI Backend Developer",
@@ -18,6 +18,12 @@ export const metadata: Metadata = {
     "LangGraph",
     "LangChain",
     "RAG",
+    "n8n",
+    "AI Automation",
+    "AI Agents",
+    "API integrations",
+    "CRM integrations",
+    "Telegram automation",
     "PostgreSQL",
     "Docker",
     "Bamako",
@@ -29,9 +35,9 @@ export const metadata: Metadata = {
     canonical: siteUrl,
   },
   openGraph: {
-    title: "Yacouba Berthe | AI / GenAI Backend Developer",
+    title: "Yacouba Berthe | AI / GenAI Backend Developer & AI Automation Specialist",
     description:
-      "Backends IA, APIs intelligentes, systèmes RAG, workflows multi-agents et automatisations GenAI.",
+      "Backends IA, APIs intelligentes, systèmes RAG, workflows multi-agents, automatisations n8n et intégrations business.",
     url: siteUrl,
     type: "website",
     locale: "fr_FR",
@@ -47,9 +53,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Yacouba Berthe | AI / GenAI Backend Developer",
+    title: "Yacouba Berthe | AI / GenAI Backend Developer & AI Automation Specialist",
     description:
-      "Développeur Backend IA / GenAI spécialisé en FastAPI, LangGraph, LangChain, RAG et PostgreSQL.",
+      "Développeur Backend IA / GenAI spécialisé en FastAPI, LangGraph, RAG, agents IA, n8n et automatisation business.",
     images: [profileImageUrl],
   },
   icons: {

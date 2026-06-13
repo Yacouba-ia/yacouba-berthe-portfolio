@@ -9,13 +9,13 @@ export function Hero() {
         <div className="animate-fade-in-up">
           <div className="mb-6 inline-flex items-center gap-2 rounded-md border border-cyan-300/20 bg-cyan-300/[0.08] px-3 py-2 text-sm font-medium text-cyan-100">
             <span className="h-2 w-2 rounded-full bg-emerald-300 shadow-[0_0_20px_rgba(114,240,180,0.85)]" />
-            Backend IA, APIs intelligentes, RAG et agents
+            Backend IA, APIs intelligentes, RAG, agents et n8n
           </div>
 
           <p className="text-sm font-semibold uppercase tracking-[0.28em] text-cyan-300">
             {profile.name}
           </p>
-          <h1 className="mt-4 max-w-4xl text-balance text-5xl font-semibold tracking-tight text-white sm:text-6xl lg:text-7xl">
+          <h1 className="mt-4 max-w-4xl text-balance text-4xl font-semibold tracking-tight text-white sm:text-6xl lg:text-7xl">
             {profile.title}
           </h1>
           <p className="mt-6 max-w-3xl text-balance text-xl leading-8 text-slate-100 sm:text-2xl">
