@@ -24,12 +24,15 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
   background: var(--background);
 }
 
 body {
   min-height: 100vh;
   margin: 0;
+  overflow-x: hidden;
+  padding-bottom: env(safe-area-inset-bottom);
   background:
     radial-gradient(circle at top left, rgba(40, 215, 255, 0.14), transparent 30rem),
     radial-gradient(circle at 85% 10%, rgba(167, 139, 250, 0.1), transparent 26rem),

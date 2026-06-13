@@ -1,4 +1,5 @@
 import { About } from "@/components/About";
+import { AutomationWorkflows } from "@/components/AutomationWorkflows";
 import { Certifications } from "@/components/Certifications";
 import { Contact } from "@/components/Contact";
 import { Education } from "@/components/Education";
@@ -18,6 +19,7 @@ export default function Home() {
         <About />
         <Services />
         <Projects />
+        <AutomationWorkflows />
         <TechStack />
         <Certifications />
         <Education />

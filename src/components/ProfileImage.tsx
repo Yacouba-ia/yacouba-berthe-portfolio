@@ -10,7 +10,7 @@ export function ProfileImage() {
   return (
     <div className="premium-card relative overflow-hidden rounded-lg p-3">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(40,215,255,0.18),transparent_45%)]" />
-      <div className="relative aspect-[4/5] overflow-hidden rounded-md border border-cyan-300/25 bg-slate-950">
+      <div className="relative aspect-[3/4] overflow-hidden rounded-md border border-cyan-300/25 bg-slate-950 sm:aspect-[4/5]">
         {hasImage ? (
           <Image
             src={profile.photoPath}
@@ -18,7 +18,7 @@ export function ProfileImage() {
             fill
             priority
             sizes="(max-width: 768px) 82vw, 420px"
-            className="object-cover"
+            className="object-cover object-[50%_28%] sm:object-center"
             onError={() => setHasImage(false)}
           />
         ) : (
